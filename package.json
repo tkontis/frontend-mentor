@@ -1,0 +1,42 @@
+{
+    "name": "frontend-mentor",
+    "version": "1.0.0",
+    "description": "front-end practice mini-projects",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --exec ts-node ./src/index.ts",
+        "start:production": "node ./dist/index.js",
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tkontis/frontend-mentor.git"
+    },
+    "keywords": [
+        "front-end",
+        "mentor",
+        "css",
+        "practice",
+        "demos",
+        "sass"
+    ],
+    "author": "Thanos Kontis",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tkontis/frontend-mentor/issues"
+    },
+    "homepage": "https://github.com/tkontis/frontend-mentor#readme",
+    "dependencies": {
+        "express": "^4.19.1"
+    },
+    "devDependencies": {
+        "@types/node-sass-middleware": "^0.0.35",
+        "node-sass": "^9.0.0",
+        "node-sass-middleware": "^1.1.0",
+        "nodemon": "^3.1.0",
+        "prettier": "^3.2.5",
+        "sass": "^1.72.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.4.3"
+    }
+}
