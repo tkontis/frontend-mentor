@@ -34,6 +34,7 @@ body {
     height: 100%;
     font-size: 16px;
     background-color: var(--eggshell);
+    margin: 0;
 }
 
 main {
@@ -43,17 +44,24 @@ main {
 
 .container {
     max-width: 600px;
-    border-radius: 10px;
+    border-radius: 20px;
+    padding: 30px;
     background-color: var(--white);
 
     .hero {
         background-image: url(/recipe-page/images/image-omelette.jpeg);
         background-size: cover;
         height: 300px;
+        border-radius: 10px;
     }
 
     h1 {
         font-family: Young Serif;
+    }
+
+    .focused {
+        padding: 25px;
+        background-color: var(--roseWhite);
     }
 }
 

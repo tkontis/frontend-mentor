@@ -11,7 +11,8 @@ const staticAssetsPath = path.join(process.cwd(), STATIC_ASSETS_DIR);
 // Sass middleware setup
 app.use(
     sassMiddleware({
-        src: path.join(process.cwd(), 'src'),
+        src: path.join(__dirname, '..'),
+        dest: path.join(__dirname, '..', '..', STATIC_ASSETS_DIR),
         debug: true,
     })
 );

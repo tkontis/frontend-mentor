@@ -24,7 +24,8 @@ html,
 body {
   height: 100%;
   font-size: 16px;
-  background-color: var(--eggshell); }
+  background-color: var(--eggshell);
+  margin: 0; }
 
 main {
   display: grid;
@@ -32,14 +33,19 @@ main {
 
 .container {
   max-width: 600px;
-  border-radius: 10px;
+  border-radius: 20px;
+  padding: 30px;
   background-color: var(--white); }
   .container .hero {
     background-image: url(/recipe-page/images/image-omelette.jpeg);
     background-size: cover;
-    height: 300px; }
+    height: 300px;
+    border-radius: 10px; }
   .container h1 {
     font-family: Young Serif; }
+  .container .focused {
+    padding: 25px;
+    background-color: var(--roseWhite); }
 
 .attribution {
   position: fixed;
