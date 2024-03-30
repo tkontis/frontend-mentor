@@ -14,6 +14,9 @@
     --lightGrey: hsl(30, 18%, 87%);
     --wengeBrown: hsl(30, 10%, 34%);
     --darkCharcoal: hsl(24, 5%, 18%);
+
+    // Paddings
+    --desktopPadding: 30px;
 }
 
 // # Typography
@@ -45,7 +48,7 @@ main {
 .container {
     max-width: 600px;
     border-radius: 20px;
-    padding: 30px;
+    padding: var(--desktopPadding);
     background-color: var(--white);
 
     .hero {
@@ -59,9 +62,23 @@ main {
         font-family: Young Serif;
     }
 
+    h2 {
+        color: var(--darkRasberry);
+    }
+
+    h3 {
+        margin: 0 0 15px;
+    }
+
     .focused {
         padding: 25px;
         background-color: var(--roseWhite);
+    }
+
+    section:not(:last-child) {
+        padding-bottom: var(--desktopPadding);
+        border-bottom: 1px solid var(--lightGrey);
+        margin-bottom: var(--desktopPadding);
     }
 }
 
@@ -71,6 +88,7 @@ main {
     bottom: 0;
     font-size: 11px;
     text-align: center;
+    padding: 10px;
 
     a {
         color: hsl(228, 45%, 44%);
