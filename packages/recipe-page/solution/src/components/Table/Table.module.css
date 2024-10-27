@@ -1,0 +1,16 @@
+table {
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+
+    tr {
+
+        &:not(:last-child) {
+            border-bottom: 1px solid grey;
+        }
+    }
+
+    td {
+        padding: 1rem;
+    }
+}

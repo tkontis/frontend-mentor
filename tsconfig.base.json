@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@mentor/recipe/*": ["packages/recipe-page/solution/src/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

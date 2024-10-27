@@ -1,10 +1,10 @@
 import { FC } from 'react';
-import Section from './components/Section';
-import Title from './components/Title';
-import List from './components/List';
-import Item from './components/Item';
-import Text from './components/Text';
-import Table from './components/Table';
+import Section from '@mentor/recipe/components/Section';
+import Title from '@mentor/recipe/components/Title';
+import List from '@mentor/recipe/components/List';
+import Item from '@mentor/recipe/components/Item';
+import Text from '@mentor/recipe/components/Text';
+import Table from '@mentor/recipe/components/Table';
 
 const App: FC = () => {
     const preparationTime = [
