@@ -8,15 +8,25 @@
 }
 
 :root {
-    border-radius: 16px;
-    desktop-max-width: 800px;
-    mobile-max-width: auto;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+    --border-radius: 16px;
+    --main-max-width: 800px;
+    --mobile-max-width: auto;
+    --desktop-padding: 2rem;
+    --mobile-padding: 2rem;
 }
 
-/* Utility classes */
-.rounded {
-    border-radius: 4px;
+/* Font declarations */
+@font-face {
+    font-family: 'OutfitVariable';
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+/* Young font family */
+@font-face {
+    font-family: 'Young Serif';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }

@@ -5,6 +5,8 @@ import List from '@mentor/recipe/components/List';
 import Item from '@mentor/recipe/components/Item';
 import Text from '@mentor/recipe/components/Text';
 import Table from '@mentor/recipe/components/Table';
+import imageOmelette from './assets/image-omelette.jpeg';
+import styles from './App.module.css';
 
 const App: FC = () => {
     const preparationTime = [
@@ -45,45 +47,47 @@ const App: FC = () => {
     ];
 
     return (
-        <>
-            <img alt="main page image" className="rounded" src="assets/image-omelette.jpeg" />
+        <main className={styles.main}>
+            <img alt="main page image" className={styles.hero} src={imageOmelette} />
 
-            <Title main>Simple Omelette Recipe</Title>
+            <div className={styles.content}>
+                <Title main>Simple Omelette Recipe</Title>
 
-            <Text>
-                An easy and quick dish, perfect for any meal. This classic omelette combines beaten
-                eggs cooked to perfection, optionally filled with your choice of cheese, vegetables,
-                or meats.
-            </Text>
-
-            <Section title="Preparation time" highlighted>
-                <List items={preparationTime} />
-            </Section>
-
-            <Section title="Ingredients">
-                <List items={ingredients} />
-            </Section>
-
-            <Section title="Instructions">
-                <List numeric items={instructions} />
-            </Section>
-
-            <Section title="Nutrition">
                 <Text>
-                    The table below shows nutritional values per serving without the additional
-                    fillings.
+                    An easy and quick dish, perfect for any meal. This classic omelette combines
+                    beaten eggs cooked to perfection, optionally filled with your choice of cheese,
+                    vegetables, or meats.
                 </Text>
 
-                <Table
-                    rows={[
-                        ['calories', '277kcal'],
-                        ['carbs', '0g'],
-                        ['protein', '20g'],
-                        ['fat', '22g'],
-                    ]}
-                />
-            </Section>
-        </>
+                <Section title="Preparation time" highlighted>
+                    <List items={preparationTime} />
+                </Section>
+
+                <Section title="Ingredients">
+                    <List items={ingredients} />
+                </Section>
+
+                <Section title="Instructions">
+                    <List numeric items={instructions} />
+                </Section>
+
+                <Section title="Nutrition">
+                    <Text>
+                        The table below shows nutritional values per serving without the additional
+                        fillings.
+                    </Text>
+
+                    <Table
+                        rows={[
+                            ['calories', '277kcal'],
+                            ['carbs', '0g'],
+                            ['protein', '20g'],
+                            ['fat', '22g'],
+                        ]}
+                    />
+                </Section>
+            </div>
+        </main>
     );
 };
 

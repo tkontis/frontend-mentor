@@ -2,8 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@mentor/recipe/*": ["packages/recipe-page/solution/src/*"]
+      "@mentor/recipe/*": ["packages/recipe-page/solution/src/*"],
+      "@mentor/recipe/components/*": ["packages/recipe-page/solution/src/components/*"]
     }
   },
-  "exclude": ["node_modules"]
+  "include": ["packages/*/src"],
+  "exclude": ["node_modules", "dist"]
 }
