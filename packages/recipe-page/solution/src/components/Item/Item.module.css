@@ -1,2 +1,14 @@
 li {
+    margin-bottom: 0.5rem;
+
+    &::marker {
+        font-family: BahnSchrift, sans-serif;
+
+        font-weight: 800;
+        color: var(--red-400);
+    }
+}
+
+.content {
+    padding-left: 1.2rem;
 }

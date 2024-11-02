@@ -1,18 +1,12 @@
 .container {
-    &.title {
-        color: rgb(106, 47, 69);
-    }
-
     &.highlighted {
+        background-color: var(--magenta-100);
         border-radius: var(--border-radius);
-        padding: 12px;
+        padding: 1.2rem;
 
-        &.title {
+        .title {
+            font: 600 1.3rem OutfitVariable;
         }
     }
 }
 
-.highlighted {
-    background-color: rgb(255, 247, 252);
-    border-radius: var(--border-radius);
-}

@@ -8,11 +8,44 @@
 }
 
 :root {
-    --border-radius: 16px;
-    --main-max-width: 800px;
-    --mobile-max-width: auto;
-    --desktop-padding: 2rem;
+    /* Colors */
+
+    /* Reds */
+    --red-100: #f0f0f0;
+    --red-400: #7f4637;
+
+    --yellow-100: #f3e5d8;
+    --yellow-200: #5c5753;
+    --yellow-300: #2d2c2a;
+
+    --magenta-100: #fff7fc;
+    --magenta-200: #77495b;
+    --magenta-300: #6a2f45;
+
+    --white: #ffffff;
+
+    /* Spacing */
+    --page-margin-top: 5rem;
+    --page-margin-bottom: 2rem;
+    --page-padding: 2.5rem;
+    --text-margin: 2rem;
+
+    --desktop-padding: 2.5rem;
     --mobile-padding: 2rem;
+
+    /* Shapes */
+    --border-radius: 16px;
+
+    /* Typography */
+    --text-size: 1rem;
+    --page-title-size: 2.6rem;
+    --page-title-color: var(--yellow-300);
+    --section-title-size: 1.8rem;
+    --section-title-color: var(--red-400);
+
+    /* Layout */
+    --main-max-width: 47rem;
+    --mobile-max-width: auto;
 }
 
 /* Font declarations */
@@ -29,4 +62,11 @@
     src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+}
+
+body {
+    font: 400 16px OutfitVariable;
+    line-height: 1.5;
+    background-color: var(--yellow-100);
+    color: var(--yellow-200);
 }

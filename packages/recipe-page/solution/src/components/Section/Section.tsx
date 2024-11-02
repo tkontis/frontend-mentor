@@ -1,4 +1,5 @@
 import { FC, ReactNode } from 'react';
+import classnames from 'classnames';
 import Title from '@mentor/recipe/components/Title';
 import styles from './Section.module.css';
 
@@ -8,8 +9,9 @@ const Section: FC<{ title: string; highlighted?: boolean; children?: ReactNode }
     children,
 }) => {
     return (
-        <section className={highlighted ? styles.highlighted : undefined}>
-            <Title>{title}</Title>
+        <section
+            className={classnames(highlighted ? styles.highlighted : undefined, styles.container)}>
+            <Title className={styles.title}>{title}</Title>
 
             {children}
         </section>

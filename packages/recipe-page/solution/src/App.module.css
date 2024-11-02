@@ -2,15 +2,22 @@
 /* desktop layout */
 main {
     max-width: var(--main-max-width);
-    margin: 0 auto;
+    margin: var(--page-margin-top) auto var(--page-margin-bottom);
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+}
+
+.content, .hero {
+    padding: var(--page-padding);
 }
 
 .content {
-    padding: var(--desktop-padding) 0;
+    padding: var(--desktop-padding);
 }
 
 .hero {
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    padding: var(--desktop-padding) var(--desktop-padding) 0;
+    border-radius: var(--border-radius);
     width: 100%;
 }
 
@@ -21,7 +28,7 @@ main {
     }
 
     .hero {
-        border-radius: 0 0 var(--border-radius) var(--border-radius);
-        width: 100%;
+        padding: 0;
+        border-radius: 0;
     }
 }
