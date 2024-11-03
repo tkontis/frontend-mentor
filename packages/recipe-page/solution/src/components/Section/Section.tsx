@@ -9,12 +9,17 @@ const Section: FC<{ title: string; highlighted?: boolean; children?: ReactNode }
     children,
 }) => {
     return (
-        <section
-            className={classnames(highlighted ? styles.highlighted : undefined, styles.container)}>
-            <Title className={styles.title}>{title}</Title>
+        <div className={styles.container}>
+            <section
+                className={classnames(
+                    highlighted ? styles.highlighted : undefined,
+                    styles.container
+                )}>
+                <Title className={styles.title}>{title}</Title>
 
-            {children}
-        </section>
+                {children}
+            </section>
+        </div>
     );
 };
 
