@@ -5,6 +5,7 @@ import List from '@mentor/recipe/components/List';
 import Item from '@mentor/recipe/components/Item';
 import Text from '@mentor/recipe/components/Text';
 import Table from '@mentor/recipe/components/Table';
+import Hero from '@mentor/recipe/components/Hero';
 import imageOmelette from './assets/image-omelette.jpeg';
 import styles from './App.module.css';
 
@@ -48,7 +49,9 @@ const App: FC = () => {
 
     return (
         <main className={styles.main}>
-            <img alt="main page image" className={styles.hero} src={imageOmelette} />
+            <div className={styles.heroContainer}>
+                <Hero alt="main page image" src={imageOmelette} />
+            </div>
 
             <div className={styles.content}>
                 <Title main>Simple Omelette Recipe</Title>

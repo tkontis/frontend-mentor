@@ -7,28 +7,25 @@ main {
     border-radius: var(--border-radius);
 }
 
-.content, .hero {
+.content, .heroContainer {
     padding: var(--page-padding);
 }
 
-.content {
-    padding: var(--desktop-padding);
-}
-
-.hero {
-    padding: var(--desktop-padding) var(--desktop-padding) 0;
-    border-radius: var(--border-radius);
-    width: 100%;
+.heroContainer {
+    padding-bottom: 0;
 }
 
 /* mobile layout */
-@media screen and (max-width: 400px) {
-    .content {
-        padding: var(--mobile-padding);
+@media screen and (max-width: 47rem) {
+    main {
+        margin: 0 auto;
     }
 
-    .hero {
+    .heroContainer {
         padding: 0;
-        border-radius: 0;
+    }
+
+    .content {
+        padding: var(--mobile-padding);
     }
 }

@@ -1,0 +1,11 @@
+.hero {
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--border-radius);
+}
+
+@media screen and (max-width: 47rem) {
+    .hero {
+        border-radius: 0;
+    }
+}
