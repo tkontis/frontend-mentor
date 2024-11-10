@@ -1,0 +1,31 @@
+/* desktop layout */
+main {
+    max-width: var(--main-max-width);
+    margin: var(--page-margin-top) auto var(--page-margin-bottom);
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+}
+
+.content,
+.heroContainer {
+    padding: var(--page-padding);
+}
+
+.heroContainer {
+    padding-bottom: 0;
+}
+
+/* mobile layout */
+@media screen and (max-width: 47rem) {
+    main {
+        margin: 0 auto;
+    }
+
+    .heroContainer {
+        padding: 0;
+    }
+
+    .content {
+        padding: var(--mobile-padding);
+    }
+}

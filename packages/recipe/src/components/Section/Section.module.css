@@ -1,0 +1,20 @@
+section {
+    &.highlighted {
+        background-color: var(--magenta-100);
+        border-radius: var(--border-radius);
+        padding: 1.2rem;
+
+        .title {
+            font: 600 1.3rem OutfitVariable;
+        }
+    }
+}
+
+.container:not(:last-child) {
+    margin-bottom: var(--spacer);
+}
+
+.container + .container:not(:last-child) {
+    padding-bottom: var(--spacer);
+    border-bottom: 1px solid var(--red-100);
+}

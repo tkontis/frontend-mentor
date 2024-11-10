@@ -1,0 +1,15 @@
+{
+    "extends": "../../tsconfig.json",
+    "references": [
+        { "path": "tsconfig.app.json" },
+        { "path": "tsconfig.node.json" }
+    ],
+    "compilerOptions": {
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "@mentor/recipe": ["src"],
+            "@mentor/recipe/*": ["src/*"]
+        }
+    }
+}
