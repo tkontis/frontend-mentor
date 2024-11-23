@@ -7,11 +7,16 @@
     "scripts": {
         "dev": "vite",
         "build": "tsc -b && vite build",
+        "predeploy": "yarn build",
+        "deploy": "gh-pages -d dist",
         "preview": "vite preview",
         "lint": "eslint ."
     },
     "devDependencies": {
         "@types/node": "^22.9.1",
         "@vitejs/plugin-react": "^4.3.3"
+    },
+    "dependencies": {
+        "gh-pages": "^6.2.0"
     }
 }

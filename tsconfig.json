@@ -10,6 +10,6 @@
     "baseUrl": ".",
     "types": ["vite/client"]
   },
-  "include": ["packages/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["packages/**/src/**/*.{ts,tsx,css}"],
+  "exclude": ["/node_modules", "dist", "**/*.d.ts"]
 }
