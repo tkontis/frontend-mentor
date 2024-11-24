@@ -11,6 +11,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
+  contents: write
   pages: write
   id-token: write
 
@@ -23,18 +24,14 @@ concurrency:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: yarn
@@ -42,12 +39,15 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Build the recipe package
+      - name: Build Recipe package
         run: yarn recipe:build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Debug Directory Structure (Optional)
+        run: ls -R packages/recipe/dist
+
+      - name: Deploy to GitHub pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: packages/recipe/dist
-          destination_branch: gh-pages
+          publish_branch: gh-pages
