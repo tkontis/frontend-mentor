@@ -1,0 +1,17 @@
+.product-container {
+    max-width: none;
+}
+
+@media screen and (max-width) {
+
+}
+
+@media screen and (max-width > 375px) {
+    .product-container {
+
+    }
+}
+
+.product-container {
+
+}

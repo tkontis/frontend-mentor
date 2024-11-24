@@ -8,6 +8,9 @@
     "recipe:dev": "yarn workspace recipe dev",
     "recipe:build": "yarn workspace recipe build",
     "recipe:deploy": "yarn workspace recipe deploy",
+    "product:dev": "yarn workspace product dev",
+    "product:build": "yarn workspace product build",
+    "product:deploy": "yarn workspace product deploy",
     "lint": "eslint .",
     "format": "prettier --write 'packages/**/*.{ts,tsx,css,json}'",
     "format-check": "prettier --check 'packages/**/*.{ts,tsx,css,json}'"
