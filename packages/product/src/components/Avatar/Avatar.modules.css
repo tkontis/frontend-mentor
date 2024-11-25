@@ -1,0 +1,8 @@
+.avatar {
+    border-radius: 50%;
+    border: 2px solid transparent;
+
+    &:hover {
+        border-color: var(--orange);
+    }
+}
